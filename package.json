@@ -1,14 +1,16 @@
 {
+  "private": true,
   "name": "demo",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "devDependencies": {
-    "cz-conventional-changelog": "3.0.2"
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "esnext-scripts": "^1.5.2"
   }
 }

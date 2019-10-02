@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "@project/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed:run": "md-seed run",
+    "seed:init": "md-seed init",
+    "seed:g": "md-seed g"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@project/db": "*",
+    "mongoose": "^5.6.10",
+    "mongoose-data-seed": "^2.0.1"
+  },
+  "mdSeed": {
+    "seedersFolder": "./seeders"
+  }
+}
