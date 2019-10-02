@@ -9,16 +9,8 @@
       "packages/*"
     ]
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "cross-env": "^5.2.0",
     "esnext-scripts": "^1.5.2"
-  },
-  "devDependencies": {
-    "cz-conventional-changelog": "3.0.2"
   }
 }
