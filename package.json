@@ -14,11 +14,26 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "esnext format 'packages/**/*.js",
+      "esnext lint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "dependencies": {
     "cross-env": "^5.2.0",
     "esnext-scripts": "^1.5.2"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "3.0.2"
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/config-lerna-scopes": "^8.2.0",
+    "cz-conventional-changelog": "3.0.2",
+    "husky": "^3.0.8"
   }
 }
