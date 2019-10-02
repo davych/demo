@@ -19,7 +19,9 @@
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
-      "esnext format packages/**/*.js"
+      "esnext format packages/**/*.js",
+      "esnext lint --fix",
+      "git add"
     ]
   },
   "husky": {
